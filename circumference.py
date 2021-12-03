@@ -1,20 +1,24 @@
-# Heliodex 2020/11/13 calc
-# Last edited 2021/08/19 calc
+# Heliodex 2020/11/13
+# Last edited 2021/12/01 -- new program style
 
 from math import pi
-print("calculate diameter or area of circle")
+print("Calculates diameter or area of circle")
 
 while True:
   x = input("1 for diameter, 2 for area ")
   
   if (x == "1"):
-    c = float(input("circumference? "))
-    print("diameter, " + str(c/pi))
+    c = float(input("Circumference? "))
+    print("Diameter:")
+    print(c/pi)
+    print(" ")
     
   elif (x == "2"):
-    r = float(input("radius? "))
-    print("area, " + str(pi*(r**2)))
+    r = float(input("Radius? "))
+    print("Area:")
+    print(pi*(r**2))
+    print(" ")
   
   else:
     break
-    # ok, 1 program per file next time
+    # okay, 1 program per file next time
