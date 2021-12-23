@@ -7,5 +7,3 @@ Most programs were written or updated on my calculator (CX II-T CAS, contact me 
 The mathematical accuracy of these programs should be okay, but is NOT guaranteed. If you notice that something is incorrect, please submit an issue or pull request.
 
 Programs will be added and updated.
-
-The programs are licensed under the Apache 2 license.
