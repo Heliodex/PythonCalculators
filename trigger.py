@@ -116,6 +116,8 @@ while True:
 		sides[0] = (sides[2] * sin(radians(angles[0]))) / sin(radians(angles[2]))
 		sides[1] = (sides[2] * sin(radians(angles[1]))) / sin(radians(angles[2]))
 
+	else:
+		break
 
 	print(" ")
 	print("Side A:") # Almost as many print statements as HybridOS v2
