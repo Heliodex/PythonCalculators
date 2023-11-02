@@ -9,8 +9,9 @@ print("Solves SUVAT equations: displacement, initial & final velocity, accelerat
 def r(x: float):
     if x == 0:
         return "0"
-
     r = round(x, -int(floor(log10(abs(x)))) + 2)
+    #diff = r/10000
+    #if r > int(r) - diff and r < int(r) + diff:
     if r == int(r):
         r = int(r)
     return str(r)
@@ -18,7 +19,7 @@ def r(x: float):
 
 def done(*args):
     for i in args:
-        if i == None:
+        if i == None or i == "n":
             return False
     return True
 
@@ -36,7 +37,8 @@ while True:
     for i in range(len(suvat)):
         if suvat[i] == "":
             suvat[i] = None
-        else:
+        elif suvat[i] != "n":
+        #else:
             count += 1
             suvat[i] = float(suvat[i])
 
@@ -48,7 +50,7 @@ while True:
     print(" ")
 
     for i in range(3):
-        if s == None:
+        if s == None and s != "n":
             if done(u, v, t):  # desirable
                 s = (v + u) / 2 * t
                 print("s = t(u + v)/2")
@@ -58,7 +60,7 @@ while True:
                 print("s = ut + ½at²")
                 print("s = " + r(u) + "×" + r(t) +
                       " + ½" + r(a) + "×" + r(t) + "²")
-            elif done(v, a, t) and i > 1:  # undesirable
+            elif done(u, v, a) and i > 1:  # undesirable
                 s = (u ** 2 + v ** 2) / (2 * a)
                 print("v² = u² + 2as")
                 print("s = (u² + v²)/(2a)")
@@ -68,7 +70,7 @@ while True:
                 print("s =", r(s) + "m")
                 input("...")
 
-        if v == None:
+        if v == None and v != "n":
             if done(s, u, t) and i > 1:  # undesirable
                 v = 2 * s / t - u
                 print("s = (u + v)/2*t")
@@ -88,7 +90,7 @@ while True:
                 print("v =", r(v) + "ms⁻¹")
                 input("...")
 
-        if u == None:
+        if u == None and u != "n":
             if done(s, u, a):  # undesirable
                 u = sqrt(v ** 2 - 2 * a * s)
                 print("v² = u² + 2as")
@@ -120,7 +122,7 @@ while True:
                 print("u =", r(u) + "ms⁻¹")
                 input("...")
 
-        if a == None:
+        if a == None and a != "n":
             if done(s, u, t):  # undesirable
                 a = 2 * (s - u * t) / t ** 2
                 print("s = ut + ½at²")
@@ -145,7 +147,7 @@ while True:
                 print("a =", r(a) + "ms⁻²")
                 input("...")
 
-        if t == None:
+        if t == None and t != "n":
             if done(s, u, a):  # undesirable
                 t = (sqrt(2 * a*s+u ** 2)-u)/a
                 print("s = ut + ½at²")
