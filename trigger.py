@@ -1,7 +1,7 @@
 # Heliodex 2022/01/13
 # Last edited 2022/01/21
 
-# Likely my biggest ever calculator program. Almost FOUR KILOBYTES!!!
+# Likely my biggest ever calculator program. Almost FOUR KILOBYTES!!! (edit: not anymore as of suvatSolver 2023/08/31)
 
 # Prior warning: I was trying to program this to put on my calculator for the maths test on Friday 2022/01/21.
 # It is all hastily hacked together, pretty unsafe, and accuracy of calculations is not guaranteed.
@@ -9,7 +9,7 @@
 # My first attempt at the program took a week to write, and was much more difficult to write and test. This one took me about a day. Learned a lot about trig tho.
 # Rewrite was inspired by https://brownmath.com/ti83/triangle.htm for the TI-83, makes it a lot easier to test the program.
 
-from math import *
+from math import sqrt, asin, degrees, sin, cos, pi, radians
 
 print("Trigger: The ultimate trigonometry program")
 print("Version 2.0.0")

@@ -1,7 +1,7 @@
 # Heliodex 2023/08/31
 # Last edited 2023/09/01
 
-from math import *
+from math import floor, log10, sqrt
 
 print(
     "Solves SUVAT equations: displacement, initial & final velocity, acceleration, time"
@@ -140,9 +140,8 @@ while True:
                 print("v² = u² + 2as")
                 print("a = (v² - u²)/(2s)")
                 print("a = (" + r(v) + "² - " + r(u) + "²)/(2×" + r(s) + ")")
-            elif done(s, v, t):  # i give up
-                if i > 2:
-                    raise "f*ck you"
+            elif done(s, v, t) and i > 2:  # i give up
+                raise "f*ck you"
 
             if a:
                 print("a =", r(a) + "ms⁻²")
@@ -175,9 +174,8 @@ while True:
                 print("s = (u + v)/2*t")
                 print("t = 2s/(u + v)")
                 print("t = 2×" + r(s) + "/(" + r(u) + " + " + r(v) + ")")
-            elif done(s, v, a):  # i give up
-                if i > 2:
-                    raise "you're on your own"
+            elif done(s, v, a) and i > 2:  # i give up
+                raise "you're on your own"
 
             if t:
                 print("t =", r(t) + "s")
