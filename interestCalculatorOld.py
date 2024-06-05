@@ -5,15 +5,15 @@
 print("Calculates amount after adding a percentage a number of times")
 
 while True:
-  val = float(input("Current value? "))
-  int = float(input("Interest %? "))
-  times = float(input("Number of times? "))
-  print(" ")
-  
-  b = val
-  print("Values:")
-  for i in range(times+1):
-    print(b)
-    b = b * (1 + int/100)
-  
-  print(" ") # Line 24, converseOfPythagoras.tns
+    val = float(input("Current value? "))
+    int = float(input("Interest %? "))
+    times = float(input("Number of times? "))
+    print(" ")
+
+    b = val
+    print("Values:")
+    for i in range(times + 1):
+        print(b)
+        b = b * (1 + int / 100)
+
+    print(" ")  # Line 24, converseOfPythagoras.tns

@@ -11,8 +11,8 @@ while True:
     deg = float(input("Angle degrees? "))
     print(" ")
 
-    adj = cos(radians(deg/2)) * rad  # trigonometry!!  aaa
-    opp = sin(radians(deg/2)) * rad  # radians is correct. took too long
+    adj = cos(radians(deg / 2)) * rad  # trigonometry!!  aaa
+    opp = sin(radians(deg / 2)) * rad  # radians is correct. took too long
 
     print("Adjacent:")
     print(adj)
@@ -23,13 +23,13 @@ while True:
     print(" ")
 
     # isosceles triangle with chord as base, A = (1/2)*B*H
-    triArea = (adj * opp)
+    triArea = adj * opp
     # no need to /2 , as we would double it anyway
     print("Triangle area:")
     print(triArea)
 
     # Basically copied from sector.tns
-    sectArea = (deg/360)*(pi*(rad**2))
+    sectArea = (deg / 360) * (pi * (rad**2))
     print("Sector area:")
     print(sectArea)
 

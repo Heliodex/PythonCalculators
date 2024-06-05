@@ -11,5 +11,5 @@ while True:
 
     print(" ")
     print("Gradient:")
-    print((y2-y1)/(x2-x1))
+    print((y2 - y1) / (x2 - x1))
     print(" ")

@@ -14,8 +14,8 @@ while True:
         print(" ")
 
         print("Values:")
-        for i in range(times+1):
-            f = (((100 + int)/100) ** i) * val
+        for i in range(times + 1):
+            f = (((100 + int) / 100) ** i) * val
             print(str(i) + ": " + str(f))  # funny c
             # i, not times
 
@@ -42,7 +42,7 @@ while True:
         print("Values:")
         i = 0
         while True:
-            f = (((100 + int)/100) ** i) * val1
+            f = (((100 + int) / 100) ** i) * val1
             print(str(i) + ": " + str(f))
             # i, not times
             if f < val2 and decrease or f > val2 and not decrease:
@@ -70,8 +70,8 @@ while True:
         print("Values:")
         i = 0  # idk how infinite for loops python
         while True:
-            f1 = (((100 + int1)/100) ** i) * val1
-            f2 = (((100 + int2)/100) ** i) * val2
+            f1 = (((100 + int1) / 100) ** i) * val1
+            f2 = (((100 + int2) / 100) ** i) * val2
 
             print(str(i) + ": " + str(f1) + ", " + str(f2))
             # i, not times

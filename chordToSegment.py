@@ -7,12 +7,12 @@ while True:
     rad = float(input("Circle radius? "))
     chd = float(input("Chord length? "))
 
-    segmDepth = rad-((rad**2)-((chd/2)**2))**0.5
+    segmDepth = rad - ((rad**2) - ((chd / 2) ** 2)) ** 0.5
     # Least optimal equation ever
     print(" ")
 
     print("Depth 1:")
     print(segmDepth)
     print("Depth 2:")
-    print((rad*2)-segmDepth)
+    print((rad * 2) - segmDepth)
     print(" ")
